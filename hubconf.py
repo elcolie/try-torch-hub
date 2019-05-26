@@ -60,7 +60,7 @@ def cnn(pretrained=True, *args, **kwargs):
     args & kwargs are arguments for the function
     """
     model = Net()
-    checkpoint = 'models/cnn.pth'
+    checkpoint = './models/cnn.pth'
     if pretrained:
         model.load_state_dict(torch.load(checkpoint))
     return model
